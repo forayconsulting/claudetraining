@@ -178,6 +178,26 @@ Their actual contribution was identifying three factors that determine whether t
 2. **Training design:** Behavioral modeling, error management, realistic training environment
 3. **Work environment:** Transfer climate, managerial support, opportunity to perform, follow-up
 
+**The scale of the problem:**
+
+| Year | U.S. Training Expenditure | Avg. Per Learner | Avg. Training Hours |
+|------|--------------------------|-------------------|---------------------|
+| 2020 | $82.5 billion | — | — |
+| 2022 | ~$101.6 billion | $1,207 | 62.4 hours |
+| 2023 | $101.8 billion | $954 | 57 hours |
+| 2024 | $98.0 billion | — | 47 hours |
+
+If only 10–40% of this training transfers to the workplace, $60–90 billion annually may be largely wasted in the U.S. alone.
+
+Post-training practice declines rapidly: Saks found that workplace application of training declined by nearly 50% (from 62% to 34%) within one year. Only 35% of organizations have formal processes to measure learning transfer (Institute for Corporate Productivity).
+
+> **Source:** Training Magazine. *2023 Training Industry Report*. [Training Magazine](https://trainingmag.com/2023-training-industry-report/)
+
+**Subsequent meta-analyses:**
+Blume, Ford, Baldwin, & Huang (2010) conducted a meta-analysis of 89 empirical studies in the *Journal of Management*, confirming positive relationships between transfer and cognitive ability, conscientiousness, motivation, and supportive work environment. Grossman & Salas (2011), building on Baldwin & Ford's model, identified the factors with the strongest, most consistent relationships with transfer: cognitive ability, self-efficacy, and motivation (trainee factors); behavioral modeling and error management (design factors); and transfer climate, support, and opportunity to perform (environmental factors).
+
+> **Citations:** Blume, B. D., Ford, J. K., Baldwin, T. T., & Huang, J. L. (2010). Transfer of training: A meta-analytic review. *Journal of Management*, 36(4), 1065–1105. Grossman, R., & Salas, E. (2011). The transfer of training: What really matters. *International Journal of Training and Development*, 15(2), 103–120.
+
 **Key insight for AI training:** Even if an AI training program teaches the right content effectively, transfer will fail without organizational support, opportunity to apply skills, and a work environment that encourages experimentation. The current "AI shame" phenomenon documented above suggests that many organizations are actively undermining the transfer climate for AI skills.
 
 ---
@@ -351,8 +371,23 @@ K. Anders Ericsson's framework of deliberate practice — the idea that expert p
 
 > **Citation:** Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review*, 100(3), 363–406.
 
+**The Macnamara et al. (2014) challenge:**
+A major meta-analysis by Macnamara, Hambrick, and Oswald, published in *Psychological Science*, tested the limits of the deliberate practice framework. They found that deliberate practice explained varying amounts of performance variance by domain:
+
+| Domain | Variance Explained by Deliberate Practice |
+|--------|------------------------------------------|
+| Games | 26% |
+| Music | 21% |
+| Sports | 18% |
+| Education | 4% |
+| **Professions** | **Less than 1%** |
+
+The finding that deliberate practice explains less than 1% of variance in professional domains is sobering for the training industry. However, critics (notably Debatin et al.) argued that the meta-analysis neglected the *individualization* characteristic of deliberate practice. When practice is highly individualized — tailored to specific weaknesses with expert feedback — the effect size is more than three times higher than at average levels. Additionally, measurement methodology matters: retrospective self-reports of practice hours are far less reliable than log-based measures.
+
+> **Citation:** Macnamara, B. N., Hambrick, D. Z., & Oswald, F. L. (2014). Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis. *Psychological Science*, 25(8), 1608–1618.
+
 **Application to software engineering:**
-A study presented at the 4th European Conference on Software Engineering Education examined how programmers perform deliberate practice. Through qualitative research with 22 participants, the findings showed:
+A study presented at the 4th European Conference on Software Engineering Education (ECSEE 2020) examined how programmers perform deliberate practice. Through qualitative research with 22 participants, the findings showed:
 - Programmers use both formal and informal training/learning
 - Classical training (university courses, work-related programs) is typically the first step
 - Social interaction and collaborative work with other programmers is "of great importance"
@@ -360,7 +395,13 @@ A study presented at the 4th European Conference on Software Engineering Educati
 
 > **Citation:** ACM. (2020). Deliberate Practice in Programming. *Proceedings of the 4th European Conference on Software Engineering Education*. [ACM DL](https://dl.acm.org/doi/10.1145/3396802.3396815)
 
-**Key insight for AI training:** Most AI training programs provide passive instruction (lectures, videos, readings) rather than structured deliberate practice with feedback. A training program that asks participants to watch videos about prompt engineering is fundamentally different from one that requires them to iteratively solve problems of increasing difficulty with expert feedback on each attempt.
+**Practical forms of deliberate practice for programmers:**
+Research and practitioner experience have identified specific formats:
+- **Code Katas** (Dave Thomas, co-author of *The Pragmatic Programmer*): short, focused exercises (10–60 min) where a developer repeats solving the same problem until the solution is correct and efficient
+- **Coding Dojos** (Laurent Bossavit, Paris, 2005): collective practice in formats like Prepared Kata (demonstration) or Randori (pair programming with audience rotation every 5–7 minutes)
+- Key principles: work above current skill level, set stretch goals, get repetition with feedback, maintain full focus over shorter periods (even elite performers max out at 4–5 hours/day), prioritize doing over watching
+
+**Key insight for AI training:** Most AI training programs provide passive instruction (lectures, videos, readings) rather than structured deliberate practice with feedback. A training program that asks participants to watch videos about prompt engineering is fundamentally different from one that requires them to iteratively solve problems of increasing difficulty with expert feedback on each attempt. The Macnamara findings reinforce that generic practice has minimal impact — practice must be *individualized* and *targeted at specific weaknesses* to matter.
 
 ---
 
@@ -374,18 +415,25 @@ Productive Failure (PF) is an instructional design where students first engage w
 **The "Four A's" mechanism:** Activation (failure activates prior knowledge), Awareness (highlights gaps), Affect (struggle sparks motivation), Assembly (feedback helps synthesize knowledge).
 
 **Meta-analytic evidence (Sinha & Kapur, 2021):**
-- PF students significantly outperformed traditional instruction-first students in conceptual understanding and transfer (Cohen's *d* = 0.36)
-- High-fidelity PF implementation: Cohen's *d* up to 0.58 — about three times the effect of a good teacher
+Published in *Review of Educational Research* (Vol. 91, No. 5, pp. 761–798), this is the most comprehensive quantification of PF effects, covering 53 studies with 166 experimental comparisons and more than 12,000 participants:
+- Overall effect size favoring PF over instruction-first: Hedge's *g* = 0.36 (95% CI: 0.20–0.51)
+- High-fidelity PF implementation: Hedge's *g* = 0.37 to 0.58 — approximately 2–3 times the effect of a year with a good teacher
+- After correcting for publication bias: Hedge's *g* = 0.87
 - No compromise on procedural knowledge
+- Effective across all ability groups when design fidelity was maintained
 
-> **Citation:** Sinha, T., & Kapur, M. (2021). When problem solving followed by instruction works: Evidence for productive failure. *Review of Educational Research*, 91(5), 823–861. [SAGE](https://journals.sagepub.com/doi/10.3102/00346543211019105)
+> **Citation:** Sinha, T., & Kapur, M. (2021). When problem solving followed by instruction works: Evidence for productive failure. *Review of Educational Research*, 91(5), 761–798. [SAGE](https://journals.sagepub.com/doi/10.3102/00346543211019105)
 
 **Application to technology education:**
-PF has been most extensively validated in mathematics and physics. Emerging research is beginning to explore its application to programming education — for example, a recent study on introductory Python programming found evidence for activation of prior knowledge and generation of novel solution methods.
+PF has been most extensively validated in mathematics and physics. Emerging research is beginning to explore its application to programming education:
+
+- **Steinhorst & Vahrenhold (ACM ICER 2022):** Investigated PF at the tertiary level in CS, noting that while PF effectiveness is well-established in secondary mathematics, there is little evidence regarding feasibility and efficacy in CS at university level.
+- **SIGCSE 2025:** Investigated PF for learning introductory Python programming, with physiological data collection on learning processes. Found evidence for activation of prior knowledge and generation of novel solution methods.
+- **Savelson & Muldner (2023)** in *Computer Science Education*: Studied emotions during PF in CS. Despite failing to produce correct solutions, students showed few instances of frustration and promising amounts of constructive reasoning during collaboration.
 
 Kapur's work has been adopted by Singapore's Ministry of Education for national curriculum redesign and has attracted approximately US$13 million in research funding.
 
-> **Source:** [Productive Failure — Manu Kapur's research site](https://www.manukapur.com/productive-failure/)
+> **Sources:** [Productive Failure — Manu Kapur's research site](https://www.manukapur.com/productive-failure/); [Steinhorst & Vahrenhold, ACM ICER 2022](https://dl.acm.org/doi/10.1145/3501709.3544300); [Savelson & Muldner, 2023](https://www.tandfonline.com/doi/full/10.1080/08993408.2023.2237365)
 
 **Relevance to AI training:** The typical AI training approach — lecture first, then practice — is exactly the opposite of what PF research recommends. Having learners wrestle with a real AI implementation challenge *before* formal instruction should produce deeper understanding, even if the initial attempt "fails."
 
@@ -394,6 +442,26 @@ Kapur's work has been adopted by Singapore's Ministry of Education for national 
 ### 4.3 Spaced Repetition and Retrieval Practice for Technical Skills
 
 The evidence for spaced repetition and retrieval practice is among the most robust in all of learning science, with direct applications to technical skill development.
+
+**Foundational research — Roediger & Karpicke:**
+Henry L. Roediger III (Washington University) and Jeffrey D. Karpicke (Purdue University) established the modern evidence base for retrieval practice. Their key finding: taking a memory test enhances later retention more than additional study, even when tests are given without feedback. After 5 minutes, restudying produced better recall — but on delayed tests (days/weeks later), prior testing produced substantially greater retention. This "testing effect" crossover is one of the most robust findings in memory research.
+
+Critically, Karpicke, Butler, & Roediger (2009) found that only 11% of students listed retrieval practice as a study technique they used, despite its demonstrated superiority — the most effective learning strategy is also among the least used.
+
+> **Citation:** Roediger, H. L., & Karpicke, J. D. (2006). The power of testing memory: Basic research and implications for educational practice. *Perspectives on Psychological Science*, 1(3), 181–210.
+
+**Spacing effects — Cepeda et al.:**
+A meta-analysis covering 839 assessments across 317 experiments in 184 articles confirmed the spacing effect (Cepeda et al., 2006). A follow-up study of over 1,350 individuals (Cepeda et al., 2008) with gaps up to 3.5 months and retention tests up to 1 year found:
+
+| Desired Retention Period | Optimal Gap (as % of retention interval) |
+|--------------------------|------------------------------------------|
+| 1 week | 20–40% (~1–3 days) |
+| 1 month | ~10–20% (~3–6 days) |
+| 1 year | 5–10% (~18–36 days) |
+
+Optimal spacing improved final recall by up to 150% — effectively doubling retention.
+
+> **Citation:** Cepeda, N. J., Vul, E., Rohrer, D., Wixted, J. T., & Pashler, H. (2008). Spacing effects in learning: A temporal ridgeline of optimal retention. *Psychological Science*, 19(11), 1095–1102.
 
 **Meta-analytic evidence:**
 - Rowland (2014): Mean effect size of *g* = 0.50 for retrieval practice vs. re-studying (159 effect sizes)
@@ -440,8 +508,22 @@ SDT describes motivation on a spectrum from fully extrinsic (external regulation
 
 > **Citation:** Ryan, R. M., & Deci, E. L. (2020). Intrinsic and extrinsic motivation from a self-determination theory perspective: Definitions, theory, practices, and future directions. *Contemporary Educational Psychology*, 61, 101860. [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0361476X20300254)
 
-**The overjustification effect:**
-Deci's earliest research (1971) demonstrated that providing monetary incentives for activities people inherently find enjoyable diminishes their intrinsic motivation. This has direct implications for certification-driven learning: when the certification becomes the primary goal, intrinsic interest in the subject matter may be undermined.
+**The overjustification effect — definitive evidence:**
+Deci's earliest research (1971) demonstrated that providing monetary incentives for activities people inherently find enjoyable diminishes their intrinsic motivation. The landmark field experiment by Lepper, Greene, & Nisbett (1973) showed that children who expected a reward for drawing showed less subsequent interest than those who received no reward or an unexpected reward.
+
+The Deci, Koestner, & Ryan (1999) meta-analysis of 128 studies in *Psychological Bulletin* provided definitive quantification:
+
+| Reward Type | Effect on Free-Choice Behavior (*d*) | Effect on Self-Reported Interest (*d*) |
+|-------------|--------------------------------------|---------------------------------------|
+| Engagement-contingent | **-0.40** | -0.15 |
+| Completion-contingent | **-0.36** | -0.17 |
+| Performance-contingent | **-0.28** | — |
+| All tangible rewards | Significantly undermining | Significantly undermining |
+| **Positive verbal feedback** | **+0.33** | **+0.31** |
+
+The negative effect sizes mean that tangible rewards *decrease* intrinsic motivation. The positive effect for verbal feedback means that informational (not controlling) praise *enhances* it. This has direct implications for certification-driven learning: when the certification (a tangible reward) becomes the primary goal, intrinsic interest in the subject matter may be undermined.
+
+> **Citation:** Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. *Psychological Bulletin*, 125(6), 627–668.
 
 **Implications for AI training:**
 
@@ -504,12 +586,39 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 
 ## 6. Key Citations and Further Reading
 
+### Summary of Key Effect Sizes and Statistics
+
+| Finding | Statistic | Source |
+|---------|-----------|--------|
+| Training effectiveness across Kirkpatrick levels | *d* = 0.60–0.63 | Arthur et al. (2003), 1,152 effect sizes |
+| Productive Failure effect (overall) | *g* = 0.36 | Sinha & Kapur (2021), 53 studies, 12,000+ participants |
+| Productive Failure with high fidelity | *g* = 0.37–0.58 | Sinha & Kapur (2021) |
+| PF corrected for publication bias | *g* = 0.87 | Sinha & Kapur (2021) |
+| Retrieval practice vs. re-studying | *g* = 0.50 | Rowland (2014), 159 effect sizes |
+| Optimal spacing improves recall by | up to 150% | Cepeda et al. (2008), 1,350+ participants |
+| Tangible rewards undermine intrinsic motivation | *d* = -0.28 to -0.40 | Deci, Koestner & Ryan (1999), 128 studies |
+| Positive verbal feedback enhances motivation | *d* = +0.33 | Deci, Koestner & Ryan (1999) |
+| Deliberate practice explains professional variance | Less than 1% | Macnamara et al. (2014) |
+| Training transfer to workplace | 10–40% | Georgenson (1982); Burke & Hutchins (2007) |
+| GenAI pilot failure rate | ~95% | MIT NANDA (2025) |
+| AI/ML project failure rate | ~80% | RAND Corporation (2024) |
+| U.S. annual training expenditure | ~$98–102 billion | Training Magazine (2023–2024) |
+| Managers satisfied with training transfer | Only 25% | Beer, Finnstrom & Schrader (2016) |
+| Students who use retrieval practice | Only 11% | Karpicke, Butler & Roediger (2009) |
+| Organizations that measure training ROI | ~5% | Bersin |
+| MOOC completion (adjusted for intent) | ~35% | Open Praxis (2024) |
+
 ### Meta-Analyses and Systematic Reviews
 
 - Arthur, W. Jr., Bennett, W. Jr., Edens, P. S., & Bell, S. T. (2003). Effectiveness of training in organizations: A meta-analysis of design and evaluation features. *Journal of Applied Psychology*, 88(2), 234–245.
-- Sinha, T., & Kapur, M. (2021). When problem solving followed by instruction works: Evidence for productive failure. *Review of Educational Research*, 91(5), 823–861.
+- Sinha, T., & Kapur, M. (2021). When problem solving followed by instruction works: Evidence for productive failure. *Review of Educational Research*, 91(5), 761–798.
 - Rowland, C. A. (2014). The effect of testing versus restudy on retention: A meta-analytic review of the testing effect. *Psychological Bulletin*, 140(6), 1432–1463.
+- Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. *Psychological Bulletin*, 132(3), 354–380.
+- Cepeda, N. J., Vul, E., Rohrer, D., Wixted, J. T., & Pashler, H. (2008). Spacing effects in learning: A temporal ridgeline of optimal retention. *Psychological Science*, 19(11), 1095–1102.
+- Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. *Psychological Bulletin*, 125(6), 627–668.
+- Macnamara, B. N., Hambrick, D. Z., & Oswald, F. L. (2014). Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis. *Psychological Science*, 25(8), 1608–1618.
 - Sackett, P. R., Zhang, C., Berry, C. M., & Lievens, F. (2022). Revisiting meta-analytic estimates of validity in personnel selection. *Journal of Applied Psychology*, 107(12), 2016–2033.
+- Blume, B. D., Ford, J. K., Baldwin, T. T., & Huang, J. L. (2010). Transfer of training: A meta-analytic review. *Journal of Management*, 36(4), 1065–1105.
 
 ### Foundational Frameworks
 
@@ -518,6 +627,9 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 - Ryan, R. M., & Deci, E. L. (2020). Intrinsic and extrinsic motivation from a self-determination theory perspective. *Contemporary Educational Psychology*, 61, 101860.
 - Lave, J., & Wenger, E. (1991). *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press.
 - Kruger, J., & Dunning, D. (1999). Unskilled and unaware of it. *Journal of Personality and Social Psychology*, 77(6), 1121–1134.
+- Roediger, H. L., & Karpicke, J. D. (2006). The power of testing memory. *Perspectives on Psychological Science*, 1(3), 181–210.
+- Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic reward. *Journal of Personality and Social Psychology*, 28(1), 129–137.
+- Grossman, R., & Salas, E. (2011). The transfer of training: What really matters. *International Journal of Training and Development*, 15(2), 103–120.
 
 ### Hype Cycle Critiques
 
@@ -542,7 +654,9 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 
 - Frontiers in Psychology (2022). Retrieval Practices Enhance Computational and Scientific Thinking Skills.
 - ACM SIGCSE (2022). Retrieval-based Teaching Incentivizes Spacing and Improves Grades in Computer Science Education.
-- ACM (2020). Deliberate Practice in Programming.
+- ACM ECSEE (2020). Deliberate Practice in Programming.
+- Steinhorst & Vahrenhold (ACM ICER, 2022). Investigating Productive Failure in Computer Science.
+- Savelson & Muldner (2023). Emotions during Productive Failure in CS. *Computer Science Education*.
 
 ---
 
