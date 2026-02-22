@@ -246,7 +246,12 @@ Bootcamps routinely advertise graduation rates and job placement rates above 90%
 - ISA (Income Share Agreement) availability has sharply declined after CFPB enforcement actions
 - Illinois became the first state to regulate ISAs with consumer protections
 
-> **Source:** National Consumers League. [Coding Bootcamp Claims: The Truth Behind the Numbers](https://nclnet.org/coding_bootcamp_claims_the_truth_behind_the_numbers/); CIRR Reports at [cirr.org](https://www.cirr.org/schooldata)
+**The BloomTech (Lambda School) case — a cautionary tale:**
+In April 2024, the CFPB issued an enforcement order against BloomTech (formerly Lambda School) and CEO Austen Allred for systematic deception. BloomTech advertised 71–86% job placement rates, while internal metrics showed rates closer to 50%, and in some cases as low as 30%. The company falsely claimed "income share" agreements were not loans; they were in fact loans with an average finance charge of $4,000. At least 11,000 income-share loans were originated. Penalties included a permanent ban from consumer lending and a 10-year ban for the CEO from student lending.
+
+> **Sources:** National Consumers League. [Coding Bootcamp Claims: The Truth Behind the Numbers](https://nclnet.org/coding_bootcamp_claims_the_truth_behind_the_numbers/); CIRR Reports at [cirr.org](https://www.cirr.org/schooldata); CFPB. [Action Against BloomTech](https://www.consumerfinance.gov/about-us/newsroom/cfpb-takes-action-against-coding-boot-camp-bloomtech-and-ceo-austen-allred-for-deceiving-students-and-hiding-loan-costs/)
+
+**Selection bias caveat:** Bootcamps with rigorous admissions (e.g., Flatiron School accepting only 8% of applicants) may show high outcomes partly because they admit students who were already likely to succeed — a methodological confound rarely addressed in outcome reporting.
 
 **Key takeaway:** Bootcamps can work, but the gap between marketing claims and independently verified outcomes is substantial. The best outcomes come from programs with strong career coaching, employer relationships, and transparent reporting — not from the programs with the flashiest advertising.
 
@@ -256,16 +261,29 @@ Bootcamps routinely advertise graduation rates and job placement rates above 90%
 
 The fundamental issue with technology certifications (AWS, Google Cloud, Microsoft, CompTIA) is that they are designed for **content validity** (demonstrating mastery of a body of knowledge) rather than **predictive validity** (forecasting future job performance). This is an important distinction that most certification marketing ignores.
 
-Research on personnel selection consistently finds that **work sample tests** are the best predictor of job performance, followed by structured interviews and job knowledge tests (Sackett, Zhang, Berry, & Lievens, 2022 — updating the classic Schmidt & Hunter meta-analysis). Certifications function as a form of job knowledge test, which does have predictive value — but less than hands-on demonstrations of skill.
+The landmark Schmidt & Hunter (1998) meta-analysis of 85 years of research on selection methods found work sample tests (*r* = 0.54) and job knowledge tests (*r* = 0.48) among the strongest predictors of job performance, while years of education (*r* = 0.10) and years of experience (*r* = 0.18) were weak predictors. The 2022 update by Sackett, Zhang, Berry, & Lievens revised some estimates and found structured interviews may be the strongest single predictor. Notably, **certifications as a distinct category were not included** in either meta-analysis — underscoring the absence of rigorous predictive validity research specific to IT certifications.
 
-**What the research shows:**
+> **Citation:** Schmidt, F. L., & Hunter, J. E. (1998). The validity and utility of selection methods in personnel psychology. *Psychological Bulletin*, 124(2), 262–274.
+
+**What vendor-funded research shows (treat with caution — conflict of interest):**
 - Pearson VUE's 2025 Value of IT Certification study (24,000 respondents): 82% gained confidence in pursuing new jobs; 63% received or anticipated promotions; 32% received salary increases
-- Certified professionals earn 18–25% more on average (multiple industry surveys)
+- ESG Research (commissioned by AWS): 90% of IT leaders agree AWS-certified staff makes the cloud team more productive
 - However: this is almost entirely self-reported data, subject to selection bias (people who pursue certifications are likely more motivated and capable to begin with)
 
-**Critical perspective:** Research specific to whether certification independently predicts performance beyond what would be expected from the candidate's underlying ability and motivation is scarce. The salary premium may reflect signaling effects (certifications signal commitment and baseline competence to employers) rather than the additional knowledge conferred by the certification itself.
+**The Foote Partners pay data — a surprising counterpoint:**
+The Foote Partners IT Skills and Certifications Pay Index (the oldest such index, tracking since 1999, covering 1,382 skills/certifications earned by 113,168 IT professionals from 4,435 employers) tells a more nuanced story:
 
-> **Source:** Pearson VUE. *2025 Value of IT Certification Candidate Report*. [Pearson VUE](https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/voc/pearson-vue-2025-value-of-certification-report.pdf)
+- Average cash pay premium for a **non-certified skill**: **9.6% of base salary**
+- Average cash pay premium for an **IT certification**: **6.5% of base salary**
+- Non-certified IT skills have earned approximately 3% more in cash premiums than certifications on an ongoing basis
+- The gap between certified and non-certified skills pay premiums is at its **widest in 24 years**
+- Exception: AI-related certifications climbed nearly 12% over the past year
+
+Foote Partners noted: "Employers are prioritizing adaptive, hands-on skills — particularly in areas like AI, data, and automation — over static certifications" and observed "a hard-to-shake feeling among some employers that book learning and test results don't always translate to sufficient real-world expertise."
+
+> **Sources:** Pearson VUE. [2025 Value of IT Certification Report](https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/voc/pearson-vue-2025-value-of-certification-report.pdf); CIO. [Foote Partners Bonus Disparities](https://www.cio.com/article/416265/foote-partners-bonus-disparities-reveal-tech-skills-most-in-demand-in-q3.html)
+
+**Critical perspective:** Research specific to whether certification independently predicts performance beyond what would be expected from the candidate's underlying ability and motivation is scarce. The salary premium may reflect signaling effects (certifications signal commitment and baseline competence to employers) rather than the additional knowledge conferred by the certification itself. The Foote Partners data suggests the market may be catching on: demonstrated skills are increasingly valued over static credentials.
 
 #### Peer Learning and Communities of Practice
 
@@ -276,6 +294,12 @@ Research on personnel selection consistently finds that **work sample tests** ar
 - Learning occurs through "legitimate peripheral participation" — newcomers gradually increase their level of engagement in a community of practice until they become experienced practitioners themselves
 - Three fundamental elements: a domain of knowledge, a community of people, and shared practice
 - Online communities extend these benefits across geographical boundaries but require intentional cultivation
+
+**The 70:20:10 model:** The widely cited model suggests ~70% of workplace learning is experiential (on-the-job), ~20% is social (peers, mentors), and ~10% is formal (courses, certifications). IZA World of Labor research states: "Informal learning is far more important for workers' human capital development than formal training courses." A study on call center agents found that new hires placed with more experienced peers reached full proficiency in 110 hours, compared to 161 hours for those placed with less experienced peers — a 32% improvement from peer composition alone.
+
+**Pair programming evidence:** Hannay, Dybå, & Arisholm (2009) conducted the most comprehensive meta-analysis of pair programming, published in *Information and Software Technology*. Pairs produced solutions with 15% fewer bugs but required approximately 15% more developer hours. Social effects were notable: pairs submitted work on time while individuals frequently did not. Partners reported working "harder and smarter" because they did not want to let their partner down.
+
+> **Citation:** Hannay, J. E., Dybå, T., & Arisholm, E. (2009). Effectiveness of pair programming: A meta-analysis. *Information and Software Technology*, 51(7), 1110–1122.
 
 **The challenge:** Designed communities of practice frequently fail or die early. They "do not fit very easily within traditional hierarchical organizations," and many corporate attempts to create them are undermined by the very bureaucratic structures they're meant to complement.
 
@@ -345,15 +369,28 @@ The Dunning-Kruger effect — the tendency of people with low ability in a speci
 - The metacognitive ignorance may inhibit low performers from improving because they are unaware of their flaws and lack motivation to address them
 - This is particularly dangerous in AI, where superficial familiarity with tools like ChatGPT or prompt engineering can create an illusion of deep understanding
 
-**AI models exhibit the same pattern:** A 2025 arXiv study found that LLMs mirror human Dunning-Kruger patterns — less competent models and those operating on unfamiliar tasks exhibit stronger overconfidence bias, proportionate to their incompetence.
+**Overconfidence in AI/ML skills specifically:**
 
-> **Citation:** (2025). Do Code Models Suffer from the Dunning-Kruger Effect? [arXiv](https://arxiv.org/html/2510.05457v1)
+A Multiverse/Coleman Parkes (2024) study surveying 810 business leaders and 1,190 employees found that **56% of self-proclaimed "AI experts" had received no formal training**. 93% of workers were confident they used AI ethically, yet only 28% of organizations had established AI governance best practices.
+
+Most striking: Fernandes et al. (2025), published in *Computers in Human Behavior*, found that AI use fundamentally distorts self-assessment. The classic Dunning-Kruger pattern (low performers overestimate, high performers underestimate) **disappeared entirely** with AI use — all AI users consistently overestimated their performance. Participants estimated they answered ~17 out of 20 questions correctly when their actual average was ~13. Counterintuitively, **higher AI literacy correlated with less accurate self-assessment**, not more.
+
+> **Citation:** Fernandes et al. (2025). *Computers in Human Behavior*. See [PsyPost analysis](https://www.psypost.org/users-of-generative-ai-struggle-to-accurately-assess-their-own-competence/)
+
+**AI models exhibit the same pattern:** A 2025 arXiv study found that LLMs mirror human Dunning-Kruger patterns — less competent models and those operating on unfamiliar tasks exhibit stronger overconfidence bias, proportionate to their incompetence. A Carnegie Mellon study found that Gemini predicted it would correctly identify 10.03 of 20 hand-drawn images, actually identified 0.93, and then retrospectively estimated it had answered 14.40 correctly.
+
+> **Citations:** [arXiv: Do Code Models Suffer from the Dunning-Kruger Effect?](https://arxiv.org/html/2510.05457v1); [CMU: AI Chatbots Remain Overconfident](https://www.cmu.edu/dietrich/news/news-stories/2025/july/trent-cash-ai-overconfidence.html)
+
+**Important methodological caveat:** Gignac & Zajenkowski (2020) in *Intelligence* argued the Dunning-Kruger effect may be partly a statistical artifact of regression to the mean and bounded scales. They demonstrated that randomly assigning test scores and self-assessments to 1,154 fictional people reproduced the classic pattern without any psychological mechanism. The conclusion: "while the phenomenon may be plausible for some skills, the magnitude of the effect may be much smaller than reported previously."
+
+> **Citation:** Gignac, G. E., & Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. *Intelligence*, 80, 101449.
 
 **Mitigation strategies supported by research:**
 - Regular code reviews and peer feedback provide external calibration
 - Pairing junior practitioners with experienced mentors (consistent with CoP theory)
 - Using objective assessments rather than self-assessment to gauge competence
 - Creating a culture where admitting uncertainty is valued over projecting confidence
+- Being especially cautious about self-assessed AI competence, given the Fernandes et al. findings that AI use itself distorts self-assessment
 
 ---
 
@@ -600,6 +637,10 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 | Positive verbal feedback enhances motivation | *d* = +0.33 | Deci, Koestner & Ryan (1999) |
 | Deliberate practice explains professional variance | Less than 1% | Macnamara et al. (2014) |
 | Training transfer to workplace | 10–40% | Georgenson (1982); Burke & Hutchins (2007) |
+| Certification pay premium vs. non-certified skills | 6.5% vs. 9.6% | Foote Partners (2025), 113,168 professionals |
+| Self-proclaimed "AI experts" with no formal training | 56% | Multiverse/Coleman Parkes (2024) |
+| Pair programming: fewer bugs, more hours | 15% each | Hannay, Dybå & Arisholm (2009) meta-analysis |
+| Work sample test validity for job performance | *r* = 0.54 | Schmidt & Hunter (1998) |
 | GenAI pilot failure rate | ~95% | MIT NANDA (2025) |
 | AI/ML project failure rate | ~80% | RAND Corporation (2024) |
 | U.S. annual training expenditure | ~$98–102 billion | Training Magazine (2023–2024) |
@@ -619,6 +660,9 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 - Macnamara, B. N., Hambrick, D. Z., & Oswald, F. L. (2014). Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis. *Psychological Science*, 25(8), 1608–1618.
 - Sackett, P. R., Zhang, C., Berry, C. M., & Lievens, F. (2022). Revisiting meta-analytic estimates of validity in personnel selection. *Journal of Applied Psychology*, 107(12), 2016–2033.
 - Blume, B. D., Ford, J. K., Baldwin, T. T., & Huang, J. L. (2010). Transfer of training: A meta-analytic review. *Journal of Management*, 36(4), 1065–1105.
+- Schmidt, F. L., & Hunter, J. E. (1998). The validity and utility of selection methods in personnel psychology. *Psychological Bulletin*, 124(2), 262–274.
+- Hannay, J. E., Dybå, T., & Arisholm, E. (2009). Effectiveness of pair programming: A meta-analysis. *Information and Software Technology*, 51(7), 1110–1122.
+- Gignac, G. E., & Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. *Intelligence*, 80, 101449.
 
 ### Foundational Frameworks
 
@@ -643,6 +687,9 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 - RAND Corporation (2024). AI/ML project failure rates research.
 - Gartner (2024). Prediction on generative AI project abandonment.
 - SEC (2024–2025). AI washing enforcement actions.
+- CFPB (2024). Enforcement action against BloomTech/Lambda School.
+- Fernandes et al. (2025). AI use distorts self-assessment. *Computers in Human Behavior*.
+- Multiverse/Coleman Parkes (2024). AI maturity gap survey (2,000 respondents).
 
 ### AI Literacy Frameworks
 
