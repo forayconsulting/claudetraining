@@ -58,7 +58,9 @@ The U.S. Securities and Exchange Commission has brought multiple enforcement act
 
 > **Source:** SEC Press Release 2024-36. [SEC.gov](https://www.sec.gov/newsroom/press-releases/2024-36); Harvard Law School Forum on Corporate Governance. [Harvard](https://corpgov.law.harvard.edu/2024/04/09/sec-fines-two-investment-advisers-for-ai-washing/)
 
-The FTC launched "Operation AI Comply" in September 2024, a parallel crackdown on misleading AI claims, reaching a settlement with IntelliVision Technologies for unsubstantiated claims about AI-powered facial recognition software.
+The FTC launched **"Operation AI Comply"** on September 25, 2024, with five simultaneous enforcement actions. FTC Chair Lina Khan stated: "There is no AI exemption from the laws on the books." Key targets included DoNotPay (marketed as an "AI lawyer," never tested against human lawyers; settled for $193,000), Ascend Ecom (deceptive "AI-powered" business opportunities), and FBA Machine (promised guaranteed income through AI-powered storefronts, costing consumers $15.9 million). In December 2024, the FTC also issued an order against IntelliVision Technologies for unsubstantiated claims about AI facial recognition.
+
+> **Source:** [FTC Press Release: Operation AI Comply](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes)
 
 #### The Amazon "Just Walk Out" Revelation
 
@@ -89,7 +91,11 @@ The most sobering evidence against AI hype comes from project failure rate data:
 
 > **Key source:** MIT NANDA. *"The GenAI Divide: State of AI in Business 2025."* Based on 150 interviews, a survey of 350 employees, and analysis of 300 public AI deployments. [Fortune](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/)
 
-The MIT study found that purchasing AI tools from specialized vendors and building partnerships succeed about 67% of the time, while internal builds succeed only one-third as often. Firms often prioritized sales and marketing for GenAI, whereas ROI was actually higher in back-office automation.
+The MIT study found that purchasing AI tools from specialized vendors and building partnerships succeed about 67% of the time, while internal builds succeed only one-third as often. Firms often prioritized sales and marketing for GenAI, whereas ROI was actually higher in back-office automation. MIT senior lecturers Melissa Webster and George Westerman sought examples of enterprises achieving major transformations with GenAI and "didn't find any."
+
+The RAND Corporation study (Ryseff, De Bruhl, & Newberry, 2024), based on structured interviews with 65 experienced data scientists and engineers, found that the most common cause of AI project failure was business leaders misunderstanding or miscommunicating what problems need to be solved — not technical limitations. Only 14% of organizations reported being fully ready to integrate AI, despite 84% believing AI will significantly impact their business.
+
+> **Source:** RAND Corporation. [The Root Causes of Failure for Artificial Intelligence Projects](https://www.rand.org/pubs/research_reports/RRA2680-1.html)
 
 **Relevance to training:** These failure rates suggest that much AI training investment is being directed at tools and techniques that will never reach production. Training programs should be calibrated to the actual probability of implementation, not to vendor marketing claims.
 
@@ -126,6 +132,16 @@ The most comprehensive meta-analysis of organizational training effectiveness, a
 
 > **Citation:** Arthur, W. Jr., Bennett, W. Jr., Edens, P. S., & Bell, S. T. (2003). Effectiveness of training in organizations: A meta-analysis of design and evaluation features. *Journal of Applied Psychology*, 88(2), 234–245. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12731707/)
 
+**Salas, Tannenbaum, Kraiger, & Smith-Jentsch (2012)**
+Published in *Psychological Science in the Public Interest*, this influential review established that training should be viewed as "a whole system and not a one-time event" — what happens before and after is as important as the training itself. Training is most effective when: jobs have been analyzed, employee skill sets are understood, supervisors and leaders are aligned, and trainees are motivated to learn.
+
+> **Citation:** Salas, E., Tannenbaum, S. I., Kraiger, K., & Smith-Jentsch, K. A. (2012). The science of training and development in organizations: What matters in practice. *Psychological Science in the Public Interest*, 13(2), 74–101.
+
+**Lacerenza, Reyes, Marlow, Joseph, & Salas (2017)**
+This meta-analysis of 335 independent samples on leadership training found effect sizes of *d* = 0.63 (reactions), 0.73 (learning), 0.82 (transfer), and 0.72 (results) — substantially more effective than previously thought. The key moderators: needs analysis, feedback, multiple delivery methods (especially practice), spaced sessions, and face-to-face delivery.
+
+> **Citation:** Lacerenza, C. N., Reyes, D. L., Marlow, S. L., Joseph, D. L., & Salas, E. (2017). Leadership training design, delivery, and implementation: A meta-analysis. *Journal of Applied Psychology*, 102(12), 1686–1718.
+
 **Practical implication:** Training works — but the *design* matters enormously. The method must match the task. For AI/technology skills, which are heavily cognitive and procedural, lecture-only approaches are less effective than methods that incorporate practice, feedback, and application to realistic problems.
 
 ---
@@ -144,7 +160,11 @@ The problem: most organizations never get past Level 1.
 - Only ~5% of organizations measure training ROI (Bersin)
 - Fewer than 10% regularly measure business impact
 
-**The "smile sheet" problem:** Research by Will Thalheimer and others has shown that two major meta-analyses demonstrate that learner satisfaction (Level 1) is **not correlated with actual learning outcomes**. When organizations optimize for "smile sheets," they create training that is enjoyable rather than effective — a classic case of Goodhart's Law ("when a measure becomes a target, it ceases to be a good measure").
+**The "smile sheet" problem:** Four meta-analyses covering over 200 scientific studies find that correlations between smile-sheet (satisfaction) ratings and actual learning average about **0.09** — virtually no correlation at all (Thalheimer, citing Alliger et al., 1997 and others). Alliger, Tannenbaum, Bennett, Traver, & Shotland (1997) meta-analyzed 34 studies yielding 115 correlations and found that *utility-type* reactions ("how useful was this?") were more strongly related to learning than *affective-type* reactions ("did you enjoy this?") — but even utility reactions showed weak linkages to on-the-job performance.
+
+When organizations optimize for "smile sheets," they create training that is enjoyable rather than effective — a classic case of Goodhart's Law ("when a measure becomes a target, it ceases to be a good measure").
+
+> **Citation:** Alliger, G. M., Tannenbaum, S. I., Bennett, W., Traver, H., & Shotland, A. (1997). A meta-analysis of the relations among training criteria. *Personnel Psychology*, 50, 341–358.
 
 The gap between Level 2 (learning) and Level 3 (behavior change on the job) is where most training investments fail to translate into organizational value. By the time Level 3 and Level 4 data is available (typically 6+ months), the training program has been running for months and insights arrive too late to improve outcomes.
 
@@ -648,6 +668,8 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 | Students who use retrieval practice | Only 11% | Karpicke, Butler & Roediger (2009) |
 | Organizations that measure training ROI | ~5% | Bersin |
 | MOOC completion (adjusted for intent) | ~35% | Open Praxis (2024) |
+| Smile-sheet correlation with actual learning | *r* ≈ 0.09 | Alliger et al. (1997), 4 meta-analyses |
+| Leadership training transfer effect | *d* = 0.82 | Lacerenza et al. (2017), 335 samples |
 
 ### Meta-Analyses and Systematic Reviews
 
@@ -663,6 +685,9 @@ Based on the evidence reviewed above, here is a framework for distinguishing gen
 - Schmidt, F. L., & Hunter, J. E. (1998). The validity and utility of selection methods in personnel psychology. *Psychological Bulletin*, 124(2), 262–274.
 - Hannay, J. E., Dybå, T., & Arisholm, E. (2009). Effectiveness of pair programming: A meta-analysis. *Information and Software Technology*, 51(7), 1110–1122.
 - Gignac, G. E., & Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. *Intelligence*, 80, 101449.
+- Alliger, G. M., Tannenbaum, S. I., Bennett, W., Traver, H., & Shotland, A. (1997). A meta-analysis of the relations among training criteria. *Personnel Psychology*, 50, 341–358.
+- Salas, E., Tannenbaum, S. I., Kraiger, K., & Smith-Jentsch, K. A. (2012). The science of training and development in organizations. *Psychological Science in the Public Interest*, 13(2), 74–101.
+- Lacerenza, C. N., et al. (2017). Leadership training design, delivery, and implementation: A meta-analysis. *Journal of Applied Psychology*, 102(12), 1686–1718.
 
 ### Foundational Frameworks
 
